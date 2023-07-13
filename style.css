@@ -1,0 +1,335 @@
+* Universal Selector */
+* {
+  margin:0;
+  padding:0;  
+}
+
+/* Element Selectors */
+body {
+  position: relative;
+  font-family: "Goudy Bookletter 1911", sans-serif;
+  font-size: 20px;
+  background-color: #FDF8F5;
+  color: #4F4846;
+}
+
+h1,
+h2 {
+  margin: 20px;
+}
+
+main {
+  padding: 60px 0;
+}
+
+li {
+  display: inline;
+  padding: 0px 20px;
+  text-decoration: underline;
+  text-decoration: bold;
+}
+
+a {
+  text-decoration: none;
+  color: #FDF8F5;
+}
+
+header,
+footer {
+  height: 60px;
+  width: 100%;
+  line-height: 60px;
+  background-color: #266150;
+}
+
+header {
+  position: fixed;
+  border-bottom: 10px solid #DDAF94;
+}
+
+footer {
+  position: absolute;
+  margin-top: 0;
+  bottom: 0;
+  border-bottom: 10px solid #4F4846;
+  color: #FDF8F5;    
+}
+
+figure {
+  margin-bottom: 40px;
+}
+
+img {
+  display: block;
+  margin: 20px auto;
+}
+
+section {
+  margin-bottom: 0;
+  padding: 20px 10px 40px 10px;
+  border-top: 3px solid #DDAF94;
+  background-color:  #E8CEBF;
+}
+
+form {
+  /* Center the form on the page */
+  margin: 0 auto;
+  width: 500px;
+  padding: 10px;
+  border: 5px solid #DDAF94;
+  border-radius: 20px;
+}
+
+label {
+  display: inline-block;
+  width: 100px;
+}
+  
+input, 
+textarea {
+  box-sizing: border-box;
+  width: 300px;
+  border: 1px solid #4F4846;
+}
+
+textarea {
+  vertical-align: top;
+  height: 60px;
+}
+  
+button {
+  height: 40px;
+  width: 120px;
+  background-color: #4F4846;
+  color: #FDF8F5;
+}
+ 
+/* Class Selectors */
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+@import url('http://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+.card_SC {
+    postion: relative -1000px;
+    min-width: 200px;
+    background-color: aqua;
+    border: 2px dashed black;
+    width: 50%;
+    height: 200px;
+    padding 5 px;
+    text-align:center;
+}
+.calculator {
+    padding: 10px;
+    border-radius: 1em;
+    height 180px;
+    width 150px;
+    margin: auto;
+    background-color: #191b25;
+    box-shadow: rgba (0, 0, 0, 0.19) 0px 10px 20px rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.display-box {
+    font-family: 'orbitron', sans-serif;
+    background-color: #dcdbe1;
+    border: solid Black 0.5px;
+    color: black;
+    border-radius: 5px;
+    width: 100%;
+    height: 65%;
+}
+#btn {
+    background-color: #fb0066;
+}
+input [type:button] {
+     font-family: 'orbitron', sans-serif;
+    background-color: #64278f;
+    color: white;
+    border: solid Black 0.5px;
+    border-radius: 5px;
+    width: 100%;
+    height: 70%;
+    outline: none;
+}
+input:active[type=button] {
+    background: #e5e5e5e5;
+    -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+    -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+    box-shadow: inset 0px 0xp 5px #c1c1c1;
+}
+
+
+@import url('http://fonts.googleapis.com/css?family=Audiowide');
+@import url('http://fonts.googleapis.com/css?family=Sofia');
+.card_PP {
+    display: flex;
+    background-color: #114b5F;
+    text-align: center;
+    flex-direction: column;
+    Padding-top: 2    min-width: 200px;
+    background-color: aqua;
+    border: 2px dashed black;
+    width: 50%;
+    height: 200px;
+    padding 5 px;
+    text-align:center;%;
+}
+#container {
+    width: 500px;
+    height: 500px;
+    background: #e4fde1;
+    margin: 10px auto;
+}
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: space-evenly;
+    font-family: 'Audiowide';
+    color: 10px auto;
+}
+ul li {
+    background: #456990;
+    width: 30%;
+    height: 150px;
+    border: 1px solid #028090;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 3rem;
+}
+ h3 {
+    color: #e4fde1;
+    font-family: 'Sofia';
+    text-align: center;
+ }
+.empty {
+    background: #dad4ef
+    border: 2px solid #114b5f
+}
+#modal {
+    width: 40%;
+    height: 300px;
+    background: #DE5360;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Sofia';
+}
+#modal #messages {
+    color: #fd1e3f;
+    margin: 0;
+    font-size: 4rem;
+}
+.hide {
+    display: none;
+}
+#modal #header {
+    text-align: right;
+    padding: 5px 10px;
+}
+#modal #header button {
+    padding:10px;
+    border: 0px;
+    background: #456990;
+    color: #E4FDE1;
+    cursor: pointer;
+}
+
+
+@import url ('http://fonts.googleapis.com/css2?family=Poppins:wgt@400;500;600&display=swap');
+.card_CA {
+    display: flex;
+    background-color: #114b5F;
+    text-align: center;
+    flex-direction: column;
+    Padding-top: 2    min-width: 200px;
+    background-color: aqua;
+    border: 2px dashed black;
+    width: 50%;
+    height: 200px;
+    padding 5 px;
+    text-align:center;%;
+}
+.wrapper {
+    width: 450px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 15px 40px rgba (0,0,0,0.12);
+    height: 38px;
+    width: 38px;
+    margin: 0 1px;
+    cursor: pointer;
+    color:#878787;
+    text-align: center;
+    line-height: 38px;
+    font-size: 1.9rem;
+    user-select: none;
+    border-radius: 50%;
+}
+.icons span:last-child {
+    margin-right: -10px;
+}
+header .icons span:hover {
+    background: #f2f2f2;
+}
+header .current-date {
+    font-size: 1.45rem;
+    font-weight: 500;
+}
+.calendar {
+    padding: 20px;
+}
+.calendar ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    text-align: center;
+}
+.calendar .days {
+    margin-bottom: 20px;
+}
+.calendar li {
+    color: #333;
+    width: calc(100%/7);
+    font-size: 1.07rem;
+}
+.calendar .weeks li {
+    font-weight: 500;
+    cursor: default;
+}
+.calendar . days li {
+    z-index: 1;
+    cursor: pointer;
+    position: relative;
+    margin-top: 30 px;
+}
+.days li .inactive {
+    color: #aaa;
+}
+.days li .active {
+    color: #fff;
+}
+.days li::before {
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 50%;
+    height: 40px;
+    width: 40px;
+    z-index: -1;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+.days li.active::before {
+    background: #9B59B6
+}
+.days li:not(.active):hover::before{
+    background: #f2f2f2;
+}
+
