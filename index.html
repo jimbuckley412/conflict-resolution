@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="us">
+<article>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0" />
+        <title>James Buckley</title>
+        <!--normal linked sheets including my reset.css, style.css, and my javaScript that I titled app.js -->
+        <link rel="stylesheet" href="stylesheet/reset.css">
+        <link rel="stylesheet" href="stylesheet/style.css">
+        <link rel="app.js" href="stylesheet/app.js">
+        <!-- these are all links to different Fonts used in my various apps created -->
+        <link rel="stylesheet" href='http://fonts.googleapis.com/css2?family=Orbitron&display=swap'>
+        <link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Audiowide'> 
+        <link rel="stylesheet" href='http://fonts.googleapis.com/css2?family=Sofia'>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    </head>
+     <body>
+        <header>
+            <nav class="text-right">
+              <ul>
+                <li> <a href="#">About Me</a></li>
+                <li> <a href="#">Portfolio</a></li>
+                <li> <a href="#contact">Contact</a></li>
+                <li> <a href="#">Resume</a></li>
+              </ul>
+            </nav>
+          </header>    
+        <main>
+            <section id="card_AM">
+                    <!-- Used a basic Headerline and basic paragraph text -->
+                    <h2>About Me</h2>
+                    <p> Hi, My name is James Buckley.  I am enrolled in the Rutgers Computer Coding class. In this class I am expanding my knowledge on basic front-end technologies including, HTML, CSS, JavaScript, and API. We will further grow our knowledge by learning some backend technologies including NODE.JS, SQL, NOSQL, EXPRESS.JS, and REACT. A little about me: I like to cook. I spend my time outside as much as I can. I love all watersports, I own 3 surfboards all ranging from 6'6" to 9'2". I own an ocean kayak. I love fishing camping and hiking.</p>
+            </section>
+                <!-- I made the second section card_SR (surf report) -->    
+            <section id="card_SR">
+                    <h2> SURF REPORT</h2>
+                    <img src="" alt="Surf Report Coming Soon">
+                   <img src="" alt="See you at the Beach">
+            </section>
+            <section class="container" style="position:relative;">
+                <!-- Created this section to be card_WR (weather report) -->
+            <section id="card_WR" style="position:absolute; top:0; left:0">
+                    <!-- this particular Weather app only needed the html coding for headers with id of temperature, description and location to make the app work -->
+                        <h3 id="Temperature"></h3>
+                        <h3 id="description"></h3>
+                        <p id="location"></p>
+            </section>
+                <!-- Created this section to be card_SC (basic Calculator) -->
+            <section id="card_SC" style="position:absolute; top:0; left:0;">
+                        <h2 class="text-center">Basic Calculator</h2>
+                    <!-- This app used a little more HTML I had to create a table class-->
+                    <!-- ANY NOTES WITH AN * AT FRONT AND END * ARE NOTES FOR THE CALCULATOR FUNCTION -->
+                    <table class="calculator">
+                        <tr>
+                            <td colspan="3"> <input class="display-box" type="text" id="result" disabled /> </td>
+
+                        <!-- *clearScreen() function clears all the values* -->
+                            <td> <input type="button" value= "C" onclick="clearScreen()" id="btn" /> </td>
+                        </tr>
+                        <tr>
+                        <!-- *display () the function displays the value of the clicked button* -->
+                            <td> <input type="button" value= "1" onclick= "display('1')" /> </td>
+                            <td> <input type="button" value= "2" onclick= "display('2')" /> </td>
+                            <td> <input type="button" value= "3" onclick= "display('3')" /> </td>
+                            <td> <input type="button" value= "/" onclick= "display('/')" /> </td>
+                        </tr>
+                        <tr>
+                            <td> <input type="button" value= "4" onclick= "display('4')" /> </td>
+                            <td> <input type="button" value= "5" onclick= "display('5')" /> </td>
+                            <td> <input type="button" value= "6" onclick= "display('6')" /> </td>
+                            <td> <input type="button" value= "1" onclick= "display('1')" /> </td>
+                        </tr>    
+                        <tr>
+                            <td> <input type="button" value= "7" onclick= "display('7')" /> </td>
+                            <td> <input type="button" value= "8" onclick= "display('8')" /> </td>
+                            <td> <input type="button" value= "9" onclick= "display('9')" /> </td>
+                            <td> <input type="button" value= "+" onclick= "display('+')" /> </td>
+                        </tr>   
+                        <tr>
+                            <td> <input type="button" value = "." onclick= "display('.')" /> </td>
+                            <td> <input type="button" value = "0" onclick= "display('0')" /> </td>
+
+                        <!-- *calculate() function evaluates the mathematical expression* -->
+                            <td> <input type="button" value= "=" onclick="calculate()" id= "btn" /> </td>
+                            <td> <input type="button" value= "*" onclick="display('*')" /> </td>
+                        </tr> 
+                    </table>
+            </section>
+            </section>
+                <!-- added my javaScript so it will run -->
+                <script type="text/JavaScript" src=".app.js" href="stylesheet/app.js"></script>
+                <!-- Created section class Card_PP (puzzle) -->
+                <section class ="card_PP">
+                    <!-- this is a new feature onload the app will reset -->
+                    <section onload="setUp()">
+                        <!-- I created a sliding puzzle for this section -->
+                    <h3 class="text-center"> Sliding Puzzle</h3>
+                        <div id="container"> <div id="modal" class="hide">
+                            <div id="header"><button id="closeBtn" onclick="hideModal()">x</button></div>
+                            <h4 id="message">You Won!</h4>
+                            <div id="container"></div>
+                            <ul>
+                                <li>A</li>
+                                <li>B</li>
+                                <li>C</li>
+                                <li>D</li>
+                                <li>E</li>
+                                <li>F</li>
+                                <li>G</li>
+                                <li>H</li>
+                                <li id="li8" draggable="true" ondragstart="dragstart_handler(event)" ondragover = "dragend_handler(event)">H</li>
+                            </ul>
+                        </div>
+                        <script type="text/JavaScript" src=".app.js" href="stylesheet/app.js"></script>
+                <!-- Created card class Card_CA (Calendar)-->        
+                <section class = "card_CA">
+                    <div class="wrapper">
+                        <header>
+                            <p class="current-date"></p>
+                            <div class="icons">
+                                <span id ="prev" class="material-symbols-rounded">chevron_left</span>
+                                <span id ="next" class="material-symbols-rounded">chevron_right</span>
+                        </div>
+                    </header>
+                        <div class="calendar">
+                            <ul class="weeks">
+                                <li>Sun</li>
+                                <li>Mon</li>
+                                <li>Tue</li>
+                                <li>Wed</li>
+                                <li>Thu</li>
+                                <li>Fri</li>
+                                <li>Sat</li>
+                            </ul>
+                            <ul class="days"></ul>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </main>
+    </body>        
+</article>
+    <footer class="text-center">
+        <p>© 2023 Jim Buckley Productions</p>
+        <img src="" alt="Graphic with Coming soon Text" height="50px" width="50px">
+    </footer>
